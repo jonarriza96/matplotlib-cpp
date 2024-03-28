@@ -15,9 +15,15 @@ include_directories(include/)
 
 # add executable
 add_executable(minimal examples/minimal.cpp)
+add_executable(animated_3d examples/animated_3d.cpp)
 
 # link python and numpy
 target_link_libraries(minimal
+    PRIVATE
+        ${PYTHON_LIBRARIES}
+        Python3::NumPy
+)
+target_link_libraries(animated_3d
     PRIVATE
         ${PYTHON_LIBRARIES}
         Python3::NumPy

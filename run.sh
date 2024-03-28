@@ -14,3 +14,4 @@ make
 
 # Run the executable
 ./minimal
+./animated_3d
