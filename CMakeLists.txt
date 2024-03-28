@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.15)
 project(matplotlibcpp LANGUAGES CXX)
 
-set(CMAKE_INSTALL_PREFIX ${CMAKE_SOURCE_DIR}/install) # comment this if you want to install in /usr/local
+# set(CMAKE_INSTALL_PREFIX ${CMAKE_SOURCE_DIR}/install) # comment this if you want to install in /usr/local
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/") # neede for include(...)
 
 set(CMAKE_SUPPRESS_DEVELOPER_WARNINGS 1 CACHE INTERNAL "No dev warnings") # bypass dev warnings

@@ -47,13 +47,13 @@ unset(_cmake_expected_targets)
 
 
 # The installation prefix configured by this project.
-set(_IMPORT_PREFIX "/home/jonarriza96/mtpcpp/matplotlib-cpp/install")
+set(_IMPORT_PREFIX "/home/jonarriza96/papor/external/matplotlibcpp/install")
 
 # Create imported target matplotlibcpp_lib
 add_library(matplotlibcpp_lib SHARED IMPORTED)
 
 set_target_properties(matplotlibcpp_lib PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/jonarriza96/mtpcpp/matplotlib-cpp/install/include;/home/jonarriza96/mtpcpp/matplotlib-cpp/install/src"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/jonarriza96/papor/external/matplotlibcpp/install/include;/home/jonarriza96/papor/external/matplotlibcpp/install/src"
   INTERFACE_LINK_LIBRARIES "/usr/lib/x86_64-linux-gnu/libpython3.8.so;Python3::NumPy"
 )
 

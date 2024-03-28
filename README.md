@@ -31,5 +31,6 @@ target_link_libraries(my_executable matplotlibcpp_lib)
 For exemplary files that showcase how to use the library can be found in [the examples folder](examples/). You can run an example by running:
 
 ```bash
-bash examples/run_examples.sh
+cd examples
+bash run_examples.sh
 ```
